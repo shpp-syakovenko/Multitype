@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="movie"
+            type="com.serega.multitype.domain.entity.Movie" />
+
+    </data>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="match_parent"
+            android:layout_height="90dp"
+            android:background="#345343"
+            android:gravity="center"
+            android:text="@{movie.name}"
+            android:layout_marginTop="1dp"
+            android:textColor="@color/white"
+            android:textSize="22sp"
+            tools:text="xxxxxxxxxxx" />
+
+    </FrameLayout>
+</layout>
